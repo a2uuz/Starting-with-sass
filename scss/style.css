@@ -162,7 +162,7 @@ footer::after {
   color: #278da4;
 }
 
-.btn {
+.btn, .btn-callout, .btn-info {
   color: #fff;
   display: inline-block;
   font-weight: bold;
