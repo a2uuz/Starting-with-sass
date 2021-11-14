@@ -1,4 +1,22 @@
-/* BASE ------------------------------------------- */
+.btn-callout, .btn-info {
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
+}
+
+.btn-callout:hover, .btn-info:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.btn-callout:active, .btn-info:active {
+  opacity: initial;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,8 +31,7 @@ body {
   margin: 0;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-family: "Bree Serif", serif;
 }
 
@@ -26,9 +43,6 @@ ul {
 
 p {
   margin-bottom: 1.25em;
-}
-
-.intro p {
   font-size: 1.2em;
 }
 
@@ -157,19 +171,8 @@ footer::after {
   line-height: 1.25;
 }
 
-.card .icon,
-.card h1 {
+.card .icon, .card h1 {
   color: #278da4;
-}
-
-.btn, .btn-callout, .btn-info {
-  color: #fff;
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.75em 1.5em;
-  border-radius: 0.35em;
 }
 
 .btn-callout {
