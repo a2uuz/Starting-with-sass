@@ -17,9 +17,11 @@
   @media (min-width: $break-s) {
     flex: 1 per-line(2);
   }
+  @media (min-width: $break-l) {
+    flex-basis: per-line(3);
+  }
+}
 
-@media (min-width: $break-l) {
-  flex-basis: per-line(3);
-}
-}
+
+
 
