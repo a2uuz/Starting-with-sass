@@ -33,13 +33,43 @@
 }
   
 // Create a flex container
-@mixin flexy( $disp: flex, $dir: null, $wrap: null, $just: null) {
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null) {
   display: $disp;
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
 }
 
+@mixin mq($break){
+  @if break == 'xs'{
+    @media (min-width:$break-xs){
+    @content;
+    }
+  }
+
+  @if break == 's'{
+    @media (min-width:$break-s){
+    @content;
+    }
+  }
+
+  @if break == 'm'{
+    @media (min-width:$break-m){
+    @content;
+    }
+  }
+
+
+  @if break == 'l'{
+    @media (min-width: $break-l){
+    @content;
+    }
+  }
+}
 
 
 
