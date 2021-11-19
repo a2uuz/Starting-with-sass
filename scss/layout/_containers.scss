@@ -5,7 +5,7 @@
 // Main content
 .main-content {
   @include flexy($wrap: wrap);
-  @include mq('m') {
+  @include mq('medium') {
     @include center(90%);
   }
 }  
@@ -24,7 +24,7 @@
   p {
     font-size: 1.2em; 
   } 
-  @include mq('l') {
+  @include mq('large') {
     width: 45%;
   }
 }

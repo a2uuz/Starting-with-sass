@@ -57,14 +57,14 @@
     }
   }
 
-  @if break == 'm'{
+  @if break == 'medium'{
     @media (min-width:$break-m){
     @content;
     }
   }
 
 
-  @if break == 'l'{
+  @if break == 'large'{
     @media (min-width: $break-l){
     @content;
     }
