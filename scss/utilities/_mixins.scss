@@ -44,31 +44,21 @@
   justify-content: $just;
 }
 
-@mixin mq($break){
-  @if break == 'xs'{
-    @media (min-width:$break-xs){
-    @content;
-    }
-  }
-
-  @if break == 's'{
-    @media (min-width:$break-s){
-    @content;
-    }
-  }
-
-  @if break == 'medium'{
-    @media (min-width:$break-m){
-    @content;
-    }
-  }
-
-
-  @if break == 'large'{
-    @media (min-width: $break-l){
-    @content;
-    }
-  }
+// Media queries
+@mixin mq($break) {  
+  $value: map-get($breakpoints, $break);
+  $sm: map-get($breakpoints, 'sm');            
+            
+  @if $value < $sm {
+    @media (max-width: $value) {
+      @content;       
+    }          
+  }    
+  @else {
+    @media (min-width: $value) {
+      @content;       
+    }             
+  }  
 }
 
 

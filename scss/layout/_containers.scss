@@ -5,17 +5,15 @@
 // Main content
 .main-content {
   @include flexy($wrap: wrap);
-  @include mq('medium') {
+  @include mq('med') {
     @include center(90%);
   }
 }  
-
 
 // Inner
 .inner {
   padding: 0.5em 1em;
 }
-
 
 // Intro
 .intro {
@@ -24,7 +22,7 @@
   p {
     font-size: 1.2em; 
   } 
-  @include mq('large') {
+  @include mq('lg') {
     width: 45%;
   }
 }

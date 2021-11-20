@@ -499,6 +499,15 @@ a:hover {
       flex-wrap: wrap;
 }
 
+@media (min-width: 768px) {
+  .main-content {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .inner {
   padding: 0.5em 1em;
 }
@@ -510,6 +519,12 @@ a:hover {
 
 .intro p {
   font-size: 1.2em;
+}
+
+@media (min-width: 992px) {
+  .intro {
+    width: 45%;
+  }
 }
 
 header {
@@ -687,5 +702,11 @@ footer::after {
   margin-top: 75px;
   position: relative;
   z-index: 100;
+}
+
+@media (max-width: 575px) {
+  .img-featured {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
